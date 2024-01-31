@@ -1,7 +1,7 @@
 <script setup>
-useSeoMeta({
+  useSeoMeta({
     title: "Jan Liby Dela Costa | libyzxy0", 
-    description: "", 
+    description: "A 15-year-old Full-Stack Web Developer.", 
     ogTitle: "Jan Liby Dela Costa: Discover interesting things about me.",
     ogDescription: "",
     ogImage: "/me.png", 

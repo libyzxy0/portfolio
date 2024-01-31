@@ -6,17 +6,17 @@
       <p class="text-gray-500 font-medium mt-2">Discover interesting things about me 🌟</p>
     </header>
     <div class="mt-5 mx-5 md:mx-10">
-      <img src="/me.png" alt="Jan Liby Dela Costa" class="w-36 h-36 rounded-lg my-4 border-2 border-blue-400 shadow-sm">
+      <img style="border-radius: 30% 70% 41% 59% / 56% 23% 77% 44%;" src="~/assets/images/me.png" alt="Jan Liby Dela Costa" class="w-72 h-auto my-4 border-2 border-blue-400 shadow-sm">
       <p class="text-gray-600 font-medium mr-5 text-md md:mr-32">My name is <b class="text-blue-400">Jan Liby Dela Costa</b> and i'am a 15-year-old tech enthusiast, loves diving into the world of <b class="text-blue-400">Full Stack Web Development</b>, especially the <b class="text-blue-400">MEVN Stack</b>, with an infectious enthusiasm for discovering new ideas every day.</p>
       
       <div class="flex flex-col md:flex-row justify-between">
         
-      <div class="mt-6 flex flex-col">
+      <div class="mt-6 flex flex-col md:max-w-[50%]">
         <h1 class="text-blue-400 text-2xl font-bold">Technologies 🚀</h1>
         <Techs />
       </div>
       
-      <div class="mt-6 flex flex-col">
+      <div class="mt-6">
       <h1 class="text-blue-400 text-2xl font-bold">Education 📖</h1>
       <div class="my-4">
         <article class="border-l-[3px] py-1 odd:border-blue-400 even:border-gray-300">

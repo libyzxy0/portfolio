@@ -25,8 +25,8 @@
       class="text-white font-medium py-2 px-3 w-32 bg-transparent border-2 border-blue-400 rounded-full mt-6 md:z-10 transition-all duration-300 hover:bg-blue-400 hover:text-gray-800 md:py-3 md:px-3 md:w-40 md:text-xl">Learn More</button>
       </div>
       
-      <div class="hidden md:inline-flex mt-36 mx-28 z-20">
-        <img src="/me.png" alt="Jan Liby Dela Costa" class="h-56 w-56 rounded-full border-4 border-blue-400">
+      <div class="hidden md:inline-flex mt-28 mx-28 z-20">
+        <img style="border-radius: 38% 62% 22% 78% / 55% 44% 56% 45%;" src="~/assets/images/me.png" alt="Jan Liby Dela Costa" class="h-72 w-72 border-4 border-blue-400">
       </div>
       
       

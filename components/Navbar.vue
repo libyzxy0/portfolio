@@ -5,7 +5,10 @@
   }
   defineProps({
     isHero: Boolean
-  })
+  }) 
+  const hideNav = () => {
+    isMenuActive.value = false;
+  }
 </script>
 
 <template>
@@ -32,16 +35,16 @@
   </nav>
   <div class="z-20 fixed shadow-md h-auto w-full transition-all duration-300 backdrop-filter backdrop-blur-md bg-opacity-30" :class="isMenuActive ? 'top-14' : 'top-[-16rem]'">
     <ul class="flex justify-center items-center mx-4 w-auto flex-col py-4" :class="isHero ? 'text-white' : 'text-gray-700'">
-      <a href="#overview">
+      <a @click="hideNav" href="#overview">
         <li class="text-xl font-medium transition-all duration-300 hover:text-blue-400 py-1 hover:underline">Overview</li>
       </a>
-      <a href="#about">
+      <a @click="hideNav" href="#about">
         <li class="text-xl font-medium transition-all duration-300 hover:text-blue-400 py-1 hover:underline">About Me</li>
       </a>
-      <a href="#projects">
+      <a @click="hideNav" href="#projects">
         <li class="text-xl font-medium transition-all duration-300 hover:text-blue-400 py-1 hover:underline">Projects</li>
       </a>
-      <a href="#contact">
+      <a @click="hideNav" href="#contact">
         <li class="text-xl font-medium transition-all duration-300 hover:text-blue-400 py-1 hover:underline">Contact</li>
       </a>
     </ul>

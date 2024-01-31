@@ -22,7 +22,9 @@
       <div class="h-0 rounded-full border-2 border-blue-400 mt-2 w-20"></div>
       <p class="text-gray-500 font-medium mt-2">Contact me and let's connect, and collaborate together.</p>
     </header>
-    <div class="mx-5 md:mx-10 py-4 md:w-[28rem]">
+    <div class="flex md:flex-row">
+      
+    <div class="mx-5 md:mx-10 py-4 w-full md:min-w-[40%]">
       <form @submit="onSubmit" class="mt-3 flex flex-col">
         
         <div class="flex flex-col mt-3">
@@ -59,6 +61,11 @@
         </a>
       
       </div>
+    </div>
+    <div class="hidden md:inline-flex mx-10">
+      <img src="~/assets/images/undraw_contact_us_re_4qqt.svg" alt="Contact Us">
+    </div>
+    
     </div>
   </section>
 </template>
