@@ -15,20 +15,26 @@
     {
       title: "Shoti API", 
       description: "API that sends a lot of beautiful, cute, and hot girl tiktok videos.", 
-      image: "",
+      image: "https://shoti-api.deno.dev/favicon.png",
       url: "https://shoti-api.deno.dev"
     }, 
     {
-      title: "Global GC", 
-      description: "A website where you can chat, and send images, with everyone.", 
-      image: "",
-      url: "https://github.com/libyzxy0/global-gc"
+      title: "NGL Clone", 
+      description: "A web application where you can send message anonymously, the idea came from ngl.link.", 
+      image: "https://assets-global.website-files.com/62a6e19b906fa55f541799d7/62a6e2da4349165183f83d89_ngl_icon-p-500.png",
+      url: "https://github.com/libyzxy0/notgonnalie"
     }, 
     {
       title: "Metry Bot", 
       description: "A simple messenger chatbot built using typescript.", 
       image: "",
       url: "https://github.com/libyzxy0/MetryBot"
+    }, 
+    {
+      title: "Reactjs Calculator", 
+      description: "A simple calculator using reactjs, tailwindcss.", 
+      image: "",
+      url: "https://github.com/libyzxy0/calculator-react"
     }
   ]);
 </script>
