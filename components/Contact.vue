@@ -3,14 +3,14 @@
   const subject = ref("");
   const email = ref("");
   const message = ref("");
-  const btnState = ref({
-    isLoading: false
-  })
+  const btnState = ref({ txt: '' })
   const data = { name: name.value, subject: subject.value, email: email.value, message: message.value };
   const onSubmit = (e) => {
     e.preventDefault();
     btnState.value.isLoading = true;
+    btnState.value.txt = 'Loading';
     setTimeout(() => {
+      btnState.value.txt = 'Message Sent';
       btnState.value.isLoading = false;
     }, 3000)
   }
@@ -29,21 +29,21 @@
         
         <div class="flex flex-col mt-3">
           <label class="text-gray-600">Name</label>
-          <input v-model="name" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md" type="text" placeholder="Enter your name.">
+          <input v-model="name" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md text-gray-600" type="text" placeholder="Enter your name.">
         </div>
         <div class="flex flex-col mt-3">
           <label class="text-gray-600">Email</label>
-          <input v-model="email" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md" type="email" placeholder="Enter your email.">
+          <input v-model="email" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md text-gray-600" type="email" placeholder="Enter your email.">
         </div>
         <div class="flex flex-col mt-3">
           <label class="text-gray-600">Subject</label>
-          <input v-model="subject" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md" type="text" placeholder="Enter subject.">
+          <input v-model="subject" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md text-gray-600" type="text" placeholder="Enter subject.">
         </div>
         <div class="flex flex-col mt-3">
           <label class="text-gray-600">Message</label>
-          <textarea v-model="message" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md resize-none" rows="4" placeholder="Enter your name."></textarea>
+          <textarea v-model="message" class="mt-2 outline-none border-2 border-gray-300 px-3 py-2 rounded-md resize-none text-gray-600" rows="4" placeholder="Enter your name."></textarea>
         </div>
-        <button type="submit" class="bg-blue-400 py-3 px-4 mt-4 w-40 rounded-md shadow text-white font-medium transition-all duration-300 hover:bg-blue-300">{{ btnState.isLoading ? 'Loading...' : 'Send Message' }}</button>
+        <button type="submit" class="bg-blue-400 py-3 px-4 mt-4 w-40 rounded-md shadow text-white font-medium transition-all duration-300 hover:bg-blue-300">{{ btnState.txt ? btnState.txt : 'Send Message' }}</button>
       </form>
       <h1 class="mt-8 text-blue-400 text-xl font-bold">Social links ✨</h1>
       <div class="h-20 flex flex-row mt-3">
