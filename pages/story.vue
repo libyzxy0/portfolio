@@ -4,7 +4,7 @@
     
     <ul class="list-disc mx-5 mt-5 text-white font-medium">
       <li>When he was 12 years old, he dreamed of being a <b class="text-blue-400">Hacker</b>.</li>
-      <li class="my-2">Suddenly, while watching YouTube tutorials on how to Hack, he was guided to learn the <b class="text-blue-400">Python</b> programming language.</li>
+      <li class="my-2">Suddenly, while watching YouTube tutorials on how to Hack, he was guided to learn the Python programming language.</li>
       <li class="my-2">He studied Python programming for over a month, and the story began here.</li>
       <li class="my-2">Through learning Python, he discovered many beautiful things that could be built using programming.</li>
       <li class="my-2">While enjoying learning Python, he discovered how to create a Messenger Chatbot named Kei Sy.</li>
