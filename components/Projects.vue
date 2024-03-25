@@ -9,7 +9,7 @@
     {
       title: "TikDown.click", 
       description: "A website where you can download tiktok videos without watermark.", 
-      image: "/tikdownthumb.png",
+      image: "/download.png",
       url: "https://tikdown.click"
     }, 
     {
