@@ -37,7 +37,7 @@ export const ContactSection = () => (
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/libyzxy0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -47,7 +47,7 @@ export const ContactSection = () => (
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/libyzxy0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -57,7 +57,7 @@ export const ContactSection = () => (
             </a>
 
             <a
-              href="https://facebook.com/yourusername"
+              href="https://facebook.com/libyzxy0"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
