@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", archivoBlack.variable, "font-sans", geist.variable, courierPrime.variable)}
+      className={cn("h-full", "antialiased scroll-smooth", archivoBlack.variable, "font-sans", geist.variable, courierPrime.variable)}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">

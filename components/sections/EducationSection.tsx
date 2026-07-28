@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const EducationSection = () => (
   <section id="education" className="w-full py-20 px-6 md:px-16 border-t border-border/40 bg-muted/20">
-    <div className="max-w-3xl mx-auto space-y-10">
+    <div className="max-w-6xl mx-auto space-y-10">
       <div className="flex items-center gap-2 text-primary font-mono text-sm">
         <GraduationCap className="h-4 w-4" />
         <span>02. Education</span>

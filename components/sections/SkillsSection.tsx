@@ -3,7 +3,7 @@ import { SKILLS } from "@/data/portfolio";
 
 export const SkillsSection = () => (
   <section id="skills" className="w-full py-20 px-6 md:px-16 border-t border-border/40">
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="max-w-6xl mx-auto space-y-8">
       <div className="flex items-center gap-2 text-primary font-mono text-sm">
         <Code className="h-4 w-4" />
         <span>03. Tech Stack & Skills</span>

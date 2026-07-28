@@ -8,105 +8,119 @@ import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const links = [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#" },
-    { label: "Education", href: "#" },
-    { label: "Skills", href: "#" },
-    { label: "Projects", href: "#" },
-    { label: "Contact", href: "#" },
+  { label: "Home", href: "#" },
+  { label: "About", href: "#about" },
+  { label: "Education", href: "#education" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    return (
-        <nav
-            className={`sticky top-0 z-50 w-full h-20 px-6 flex flex-row items-center justify-between md:px-16 transition-all duration-300 ${isScrolled
-                    ? "bg-background/90 backdrop-blur-md border-b border-border shadow-sm"
-                    : "bg-transparent border-b border-transparent"
-                }`}
-        >
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
+  return (
+    <>
+      <nav
+        className={`sticky top-0 z-50 w-full h-20 px-6 flex flex-row items-center justify-between md:px-16 transition-all duration-300 ${
+          isScrolled
+            ? "bg-background/90 backdrop-blur-md"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="flex flex-row items-center gap-2">
+          <Image src={logo} alt="logo" className="h-12 w-12" />
+          <h1 className="scroll-m-20 text-primary text-xl font-extrabold font-mono tracking-tight text-balance">
+            libyzxy0
+          </h1>
+        </div>
+
+        <div className="hidden md:block">
+          <ul className="flex flex-row items-center gap-4">
+            {links.map((link) => (
+              <li
+                key={link.label}
+                className="font-mono text-sm hover:bg-foreground hover:text-background px-1 transition-colors"
+              >
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+            <li className="ml-4 mr-2">
+              <ThemeToggle />
+            </li>
+          </ul>
+        </div>
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <Button
+            size="icon"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
+          >
+            <Menu className="h-6 w-6" />
+          </Button>
+        </div>
+      </nav>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-[100] bg-background flex flex-col md:hidden">
+          <div className="w-full h-20 px-6 flex items-center justify-between">
             <div className="flex flex-row items-center gap-2">
-                <Image src={logo} alt="logo" className="h-12 w-12" />
-                <h1 className="scroll-m-20 text-primary text-xl font-extrabold font-mono tracking-tight text-balance">
-                    libyzxy0
-                </h1>
+              <Image src={logo} alt="logo" className="h-12 w-12" />
+              <h1 className="scroll-m-20 text-primary text-xl font-extrabold font-mono tracking-tight text-balance">
+                libyzxy0
+              </h1>
             </div>
 
-            <div className="hidden md:block">
-                <ul className="flex flex-row items-center gap-4">
-                    {links.map((link) => (
-                        <li
-                            key={link.label}
-                            className="font-mono text-sm hover:bg-foreground hover:text-background px-1 transition-colors"
-                        >
-                            <a href={link.href}>{link.label}</a>
-                        </li>
-                    ))}
-                    <li className="ml-4 mr-2">
-                        <ThemeToggle />
-                    </li>
-                </ul>
+            <div className="flex items-center gap-4 md:hidden">
+              <ThemeToggle />
+              <Button
+                size="icon"
+                onClick={() => setIsOpen(false)}
+                aria-label="Close menu"
+              >
+                <X className="h-6 w-6" />
+              </Button>
             </div>
+          </div>
 
-            <div className="flex items-center gap-2 md:hidden">
-                <ThemeToggle />
-                <Button
-                    size="icon"
-                    onClick={() => setIsOpen(true)}
-                    aria-label="Open menu"
-                >
-                    <Menu className="h-6 w-6" />
-                </Button>
-            </div>
-
-            {isOpen && (
-                <div className="fixed inset-0 z-[60] bg-background flex flex-col md:hidden">
-                    <div className="w-full h-20 px-6 flex items-center justify-between">
-                        <div className="flex flex-row items-center gap-2">
-                            <Image src={logo} alt="logo" className="h-12 w-12" />
-                            <h1 className="scroll-m-20 text-primary text-xl font-extrabold font-mono tracking-tight text-balance">
-                                libyzxy0
-                            </h1>
-                        </div>
-                         <div className="flex items-center gap-2 md:hidden">
-                <ThemeToggle />
-                <Button
-                    size="icon"
-                    onClick={() => setIsOpen(false)}
-                    aria-label="Open menu"
-                >
-                    <X className="h-6 w-6" />
-                </Button>
-            </div>
-
-                    </div>
-
-                    <ul className="flex flex-col items-center justify-center gap-8 flex-1">
-                        {links.map((link) => (
-                            <li key={link.label} className="font-mono text-xl">
-                                <a href={link.href} onClick={() => setIsOpen(false)}>
-                                    {link.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            )}
-        </nav>
-    );
+          <ul className="flex flex-col items-center justify-center gap-8 flex-1">
+            {links.map((link) => (
+              <li key={link.label} className="font-mono text-xl">
+                <a href={link.href} onClick={() => setIsOpen(false)}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
+  );
 }

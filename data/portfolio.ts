@@ -1,7 +1,7 @@
 import { SkillCategories, Project } from "@/types/portfolio";
 
 export const TERMINAL_LINES = [
-  { prompt: "whoami", output: "libyzxy0" },
+  { prompt: "whoami", output: "Jan Liby Dela Costa" },
   { prompt: "cat role.txt", output: "BSIT Student & Full-Stack Developer" },
   {
     prompt: "cat bio.txt",

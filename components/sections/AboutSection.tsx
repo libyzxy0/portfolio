@@ -2,7 +2,7 @@ import { User } from "lucide-react";
 
 export const AboutSection = () => (
     <section id="about" className="w-full py-20 px-6 md:px-16 border-t border-border/40">
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-6xl mx-auto space-y-6">
             <div className="flex items-center gap-2 text-primary font-mono text-sm">
                 <User className="h-4 w-4" />
                 <span>01. About Me</span>

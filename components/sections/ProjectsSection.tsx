@@ -6,7 +6,7 @@ import { PROJECTS } from "@/data/portfolio";
 
 export const ProjectsSection = () => (
   <section id="projects" className="w-full py-20 px-6 md:px-16 border-t border-border/40 bg-muted/20">
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="max-w-6xl mx-auto space-y-8">
       <div className="flex items-center gap-2 text-primary font-mono text-sm">
         <Code className="h-4 w-4" />
         <span>04. Projects</span>
@@ -15,7 +15,7 @@ export const ProjectsSection = () => (
         Things I&apos;ve built
       </h2>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {PROJECTS.map((project, idx) => (
           <Card
             key={idx}
