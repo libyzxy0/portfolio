@@ -29,7 +29,7 @@ export const ContactSection = () => (
 
           <div className="space-y-4 pt-2">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:contact@libyzxy0.me"
               className="flex items-center gap-3 font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5 text-primary" />
