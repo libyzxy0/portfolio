@@ -6,10 +6,10 @@ export const SkillsSection = () => (
     <div className="max-w-6xl mx-auto space-y-8">
       <div className="flex items-center gap-2 text-primary font-mono text-sm">
         <Code className="h-4 w-4" />
-        <span>03. Tech Stack & Skills</span>
+        <span>03. Skills</span>
       </div>
       <h2 className="text-3xl md:text-4xl font-bold font-mono tracking-tight">
-        Technologies & Capabilities
+        Technologies & Tools
       </h2>
 
       <div className="space-y-6">

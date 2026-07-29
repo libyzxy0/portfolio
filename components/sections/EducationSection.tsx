@@ -19,7 +19,7 @@ export const EducationSection = () => (
       <div className="relative border-l-2 border-border/60 ml-2 sm:ml-3 pl-6 sm:pl-8 space-y-8">
         <div className="relative group">
           <span className="absolute -left-[31px] sm:-left-[39px] top-6 h-3 w-3 rounded-full border-2 border-primary bg-background group-hover:bg-primary transition-colors z-10" />
-          <Card className="border border-border/60 bg-background/80 backdrop-blur transition-all duration-200 group-hover:border-primary/50">
+          <Card className="border border-border/60 bg-background/80 backdrop-blur transition-all duration-200 group-hover:shadow-primary/50">
             <CardHeader className="pb-3">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <span className="font-mono text-xs text-primary font-semibold">
@@ -47,7 +47,7 @@ export const EducationSection = () => (
 
         <div className="relative group">
           <span className="absolute -left-[31px] sm:-left-[39px] top-6 h-3 w-3 rounded-full border-2 border-border bg-background group-hover:border-primary group-hover:bg-primary transition-colors z-10" />
-          <Card className="border border-border/60 bg-background/80 backdrop-blur transition-all duration-200 group-hover:border-primary/50">
+          <Card className="border border-border/60 bg-background/80 backdrop-blur transition-all duration-200 group-hover:shadow-primary/50">
             <CardHeader className="pb-3">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <span className="font-mono text-xs text-muted-foreground font-semibold">
@@ -67,7 +67,7 @@ export const EducationSection = () => (
             <CardContent className="font-mono text-xs md:text-sm text-muted-foreground space-y-2">
               <p className="flex items-start gap-2">
                 <span className="text-primary select-none">$</span>
-                <span>Learned computer systems servicing, and basic hardware troubleshooting.</span>
+                <span>Learned Computer Systems Servicing, and basic hardware troubleshooting.</span>
               </p>
             </CardContent>
           </Card>

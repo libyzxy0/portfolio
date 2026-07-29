@@ -19,7 +19,7 @@ export const ProjectsSection = () => (
         {PROJECTS.map((project, idx) => (
           <Card
             key={idx}
-            className="border border-border/60 bg-background/80 hover:border-primary/50 transition-colors"
+            className="border border-border/60 bg-background/80 hover:shadow-primary/50 transition-colors"
           >
             <CardHeader>
               <div className="flex items-center justify-between">

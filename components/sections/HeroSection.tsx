@@ -294,8 +294,7 @@ export const HeroSection = () => {
           <div className="flex flex-wrap gap-4 font-mono text-sm pt-4">
             <Button variant="outline" className="group font-mono">
               <Link href="#projects" className="flex flex-row items-center gap-2">
-                <span>View Projects</span>
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <span>My Projects</span>
               </Link>
             </Button>
 

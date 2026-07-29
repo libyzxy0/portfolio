@@ -18,6 +18,10 @@ export const SKILLS: SkillCategories = {
     { name: "Python", badge: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" },
     { name: "C++", badge: "https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
   ],
+  "Databases": [
+    { name: "Postgres", badge: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" },
+    { name: "Drizzle", badge: "https://img.shields.io/badge/Drizzle-%23000000?style=for-the-badge&logo=drizzle&logoColor=C5F74F" },
+  ],
   "Frameworks & Libraries": [
     { name: "React", badge: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" },
     { name: "Next JS", badge: "https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" },
@@ -26,10 +30,6 @@ export const SKILLS: SkillCategories = {
     { name: "NodeJS", badge: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" },
     { name: "Vite", badge: "https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" },
     { name: "TailwindCSS", badge: "https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" },
-  ],
-  "Databases & Backend": [
-    { name: "Postgres", badge: "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" },
-    { name: "Drizzle", badge: "https://img.shields.io/badge/Drizzle-%23000000?style=for-the-badge&logo=drizzle&logoColor=C5F74F" },
   ],
   "Tools & Platforms": [
     { name: "Git", badge: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" },
