@@ -21,7 +21,7 @@ const courierPrime = Martian_Mono({
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: "Jan Liby Dela Costa | @libyzxy0",
+  title: "Jan Liby Dela Costa | Full-Stack Developer",
   description: "Full-stack developer and a BSIT student that loves building software that solves real-life problems and helps people be more productive.",
 };
 
