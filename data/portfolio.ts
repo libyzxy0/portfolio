@@ -42,25 +42,12 @@ export const SKILLS: SkillCategories = {
 
 export const PROJECTS: Project[] = [
   {
-    title: "URPocket",
-    description: "A handheld device that boost productivity, and help us in our studies.",
-    tags: ["ESP32", "C++", "Python"],
-    github: "https://github.com/libyzxy0/urpocket",
-    demo: "#",
-  },
-  {
-    title: "EZVote",
-    description: "A simple Election Management Systemm (EMS). Built for schools, organizations, and communities that value trust.",
-    tags: ["Next.js", "PostgreSQL", "DrizzleORM", "Tailwind CSS"],
+    title: "EZVote: Election Management",
+    description: "Election Management System. Built for schools, organizations, and communities that value trust.",
+    tags: ["Next.js", "PostgreSQL", "TypeScript"],
     github: "#",
-    demo: "https://ezvote.vercel.app",
-  },
-  {
-    title: "LCC Digital Gatepass System",
-    description: "Digital Gatepass System for La Concepcion College, for access control and to monitor statistics and students, visitors, staffs entry and exit times. — Awarded as Best Research Project",
-    tags: ["React", "Tailwind CSS", "TypeScript", "PostgreSQL", "DrizzleORM"],
-    github: "https://github.com/libyzxy0/lcc-gatepass-system",
-    demo: "https://admin.lccgatepass.xyz",
+    demo: "https://ezvote.urange.tech",
+    image: '/ezvote.png'
   },
   {
     title: "Epon: Savings tracker app",
@@ -68,5 +55,14 @@ export const PROJECTS: Project[] = [
     tags: ["React Native", "TypeScript"],
     github: "https://github.com/libyzxy0/epon",
     demo: "https://epon.en.uptodown.com/android",
+    image: '/epon.png'
+  },
+  {
+    title: "Skan: IoT Attendance Management",
+    description: "IoT-based attendance and room monitoring system using ESP32, RFID and QR code scanning.",
+    tags: ["ESP32", "C++", "React Native"],
+    github: "https://github.com/libyzxy0/skan",
+    demo: "#",
+    image: '/unavailable.png'
   },
 ];

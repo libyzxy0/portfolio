@@ -11,4 +11,5 @@ export type Project = {
   tags: string[];
   github: string;
   demo: string;
+  image: string;
 };

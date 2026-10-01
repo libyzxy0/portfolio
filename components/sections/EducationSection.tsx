@@ -20,12 +20,13 @@ export const EducationSection = () => (
         <div className="relative group">
           <span className="absolute -left-[31px] sm:-left-[39px] top-6 h-3 w-3 rounded-full border-2 border-primary bg-background group-hover:bg-primary transition-colors z-10" />
           <Card className="border border-border/60 bg-background/80 backdrop-blur transition-all duration-200 group-hover:shadow-primary/50">
+            
             <CardHeader className="pb-3">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <span className="font-mono text-xs text-primary font-semibold">
                   2026 — Present
                 </span>
-                <Badge variant="secondary" className="w-fit font-mono text-xs">
+                <Badge variant="default" className="w-fit font-mono text-xs">
                   In Progress
                 </Badge>
               </div>
@@ -36,10 +37,26 @@ export const EducationSection = () => (
                 Bulacan State University - Sarmiento
               </CardDescription>
             </CardHeader>
+
             <CardContent className="font-mono text-xs md:text-sm text-muted-foreground space-y-2">
-              <p className="flex items-start gap-2">
+              <p className="flex items-start gap-2 text-xs">
+                <span className="text-primary select-none text-[10px]">Learned:</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
                 <span className="text-primary select-none">$</span>
-                <span>Learning Java Fundamentals, Web Technologies, and Database Systems.</span>
+                <span>Java Fundamentals</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
+                <span className="text-primary select-none">$</span>
+                <span>Web Technologies</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
+                <span className="text-primary select-none">$</span>
+                <span>Database Systems</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
+                <span className="text-primary select-none">$</span>
+                <span>Computer Networking Basics</span>
               </p>
             </CardContent>
           </Card>
@@ -65,9 +82,16 @@ export const EducationSection = () => (
               </CardDescription>
             </CardHeader>
             <CardContent className="font-mono text-xs md:text-sm text-muted-foreground space-y-2">
-              <p className="flex items-start gap-2">
+               <p className="flex items-start gap-2">
+                <span className="text-primary select-none text-[10px]">Learned:</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
                 <span className="text-primary select-none">$</span>
-                <span>Learned Computer Systems Servicing, and basic hardware troubleshooting.</span>
+                <span>Computer Systems Servicing</span>
+              </p>
+              <p className="flex items-start gap-2 text-xs">
+                <span className="text-primary select-none">$</span>
+                <span>Basic Hardware Troubleshooting</span>
               </p>
             </CardContent>
           </Card>

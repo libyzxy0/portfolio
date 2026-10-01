@@ -15,15 +15,16 @@ export const ProjectsSection = () => (
         Things I&apos;ve built
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {PROJECTS.map((project, idx) => (
           <Card
             key={idx}
             className="border border-border/60 bg-background/80 hover:shadow-primary/50 transition-colors"
           >
             <CardHeader>
+              <img className="mb-6 border-2 border-border" src={project.image} alt={project.title + ' preview'} />
               <div className="flex items-center justify-between">
-                <CardTitle className="font-mono text-xl">
+                <CardTitle className="font-mono text-lg line-clamp-1">
                   {project.title}
                 </CardTitle>
                 <div className="flex items-center gap-4 text-muted-foreground font-mono text-sm">
@@ -33,7 +34,7 @@ export const ProjectsSection = () => (
                     rel="noreferrer"
                     className="flex items-center gap-1 hover:text-foreground transition-colors"
                   >
-                    <GithubIcon className="h-4 w-4" />
+                    <GithubIcon className="h-4.5 w-4.5" />
                   </a>
                   <a
                     href={project.demo}
@@ -41,21 +42,21 @@ export const ProjectsSection = () => (
                     rel="noreferrer"
                     className="hover:text-foreground transition-colors"
                   >
-                    <ExternalLink className="h-5 w-5" />
+                    <ExternalLink className="h-4.5 w-4.5" />
                   </a>
                 </div>
               </div>
-              <CardDescription className="font-mono text-sm mt-2">
+              <CardDescription className="font-mono text-xs mt-2 line-clamp-3">
                 {project.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 line-clamp-1">
                 {project.tags.map((tag) => (
                   <Badge
                     key={tag}
-                    variant="secondary"
-                    className="font-mono text-xs"
+                    variant="outline"
+                    className="font-mono text-[10px]"
                   >
                     {tag}
                   </Badge>
