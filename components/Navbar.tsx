@@ -91,7 +91,6 @@ export default function Navbar() {
         <div className="fixed inset-0 z-[100] bg-background flex flex-col md:hidden">
           <div className="w-full h-20 px-6 flex items-center justify-between">
             <div className="flex flex-row items-center gap-2">
-              <Image src={logo} alt="logo" className="h-12 w-12" />
               <h1 className="scroll-m-20 text-primary text-xl font-extrabold font-mono tracking-tight text-balance">
                 libyzxy0
               </h1>
